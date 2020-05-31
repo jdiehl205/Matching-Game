@@ -123,4 +123,165 @@ h1 {
   position: relative;
   left: -7px;
 }
+
+@media (min-width: 375px) and (max-width: 424px) {
+  #position {
+    position: relative;
+    left: 32px;
+    top: 350px;
+  }
+  h1 {
+    position: relative;
+    left: -60px;
+  }
+  #deck {
+    -webkit-column-gap: 150px;
+            column-gap: 150px;
+  }
+  #images {
+    left: 39px;
+  }
+  #images .change {
+    left: -35px;
+  }
+  #images .change2 {
+    left: -16px;
+  }
+  #images2 {
+    left: 23px;
+  }
+  #images2 .change {
+    left: 16px;
+  }
+  #images2 .change2 {
+    left: -18px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  #position {
+    position: absolute;
+    top: 280px;
+    left: 70px;
+  }
+  #deck {
+    -webkit-column-gap: 70px;
+            column-gap: 70px;
+  }
+  #images {
+    left: 33px;
+  }
+  #images .change2 {
+    left: -15px;
+  }
+  #images .change {
+    left: -25px;
+  }
+  #images2 {
+    left: 20px;
+  }
+  #images2 .change {
+    left: 16px;
+  }
+  #images2 .change2 {
+    left: -15px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  #position {
+    position: relative;
+    top: 340px;
+    left: 160px;
+  }
+  h1 {
+    position: relative;
+    left: -60px;
+  }
+  #deck {
+    -webkit-column-gap: 70px;
+            column-gap: 70px;
+  }
+  #images {
+    left: 35px;
+  }
+  #images .change {
+    left: -35px;
+  }
+  #images .change2 {
+    left: -15px;
+  }
+  #images2 {
+    left: 15px;
+  }
+  #images2 .change {
+    left: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #position {
+    position: absolute;
+    left: 370px;
+  }
+}
+
+@media (min-width: 2560px) {
+  #position {
+    position: relative;
+    left: 250px;
+    top: 450px;
+  }
+  h1 {
+    font-size: 100px;
+    position: relative;
+    top: 440px;
+    left: 260px;
+  }
+  #deck {
+    -webkit-column-gap: 200px;
+            column-gap: 200px;
+    row-gap: 500px;
+  }
+  #deck .logo {
+    width: 600px;
+    height: 600px;
+  }
+  #images {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    z-index: -1;
+    -webkit-column-gap: 250px;
+            column-gap: 250px;
+  }
+  #images .image {
+    width: 500px;
+    height: 500px;
+  }
+  #images .change {
+    left: -65px;
+  }
+  #images .change2 {
+    left: -38px;
+  }
+  #images2 {
+    position: absolute;
+    top: 750px;
+    left: 80px;
+    z-index: -1;
+    -webkit-column-gap: 250px;
+            column-gap: 250px;
+  }
+  #images2 .image {
+    width: 500px;
+    height: 500px;
+  }
+  #images2 .change {
+    left: 45px;
+  }
+  #images2 .change2 {
+    left: -30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
