@@ -1,0 +1,114 @@
+body{
+    background-color: #3d5af1;
+}
+
+#position{
+    position: relative;
+    top: 400px;
+    left: 25px;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    left: 265px;
+    font-size: 50px;
+}
+
+#deck{
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    row-gap: 20px;
+    column-gap: 150px;
+    z-index: 1;
+    .border{
+        width: 200px;
+        height: 200px;
+    }
+    .logo{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.selected{
+    background-color: #f3f3f3;
+    width: 200px;
+    height: 200px;
+    border: solid blue 2.5px;
+}
+
+.flip{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition-property: transform;
+}
+
+#images{
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    row-gap: 20px;
+    column-gap: 65px;
+    position: absolute;
+    top: 6px;
+    left: 18px;
+    z-index: -1;
+    @include response(400px){
+        width: 1000px;
+    }
+
+   .image{
+    width: 190px;
+    height: 190px;
+   }
+
+   .change{
+    width: 190px;
+    height: 190px;
+    position: relative;
+    left: -13px;
+    }
+    .change2{
+        width: 190px;
+        height: 190px;
+        position: relative;
+        left: -7px;
+    }
+}
+
+#images2{
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    row-gap: 20px;
+    column-gap: 65px;
+    position: absolute;
+    top: 226px;
+    left: 12px;
+    z-index: -1;
+    img{
+        width: 190px;
+        height: 190px;
+    }
+    .change{
+        width: 190px;
+        height: 190px;
+        position: relative;
+        left: 5px;
+    }
+    .change2{
+        width: 190px;
+        height: 190px;
+        position: relative;
+        left: -7px;
+    }
+}
+
+// Responsive
+
+@mixin response($wth) {
+    @media (max-width: $wth){
+        @content;
+    }
+}
